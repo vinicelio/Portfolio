@@ -83,6 +83,8 @@
 .links {
   display: flex;
   justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .link {
   justify-content: center;
@@ -92,10 +94,13 @@
   padding: 50px;
 }
 .email {
-  display: grid;
+  flex: 1;
   justify-content: center;
+  align-items: center;
 }
-.imput {
+.input {
+  margin-bottom: 20px;
+  display: block;
   align-items: center;
   text-align: center;
   background-color: transparent;

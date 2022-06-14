@@ -89,9 +89,9 @@ export default function Home() {
             </a>
           </div>
           <div className="email">
-            <input className="imput" type="text" placeholder="Your Full Name" />
-            <input className="imput" type="text" placeholder="Your Email" />
-            <input className="imput" type="text" placeholder="Your Message" />
+            <input className="input" type="text" placeholder="Your Full Name" />
+            <input className="input" type="text" placeholder="Your Email" />
+            <input className="input" type="text" placeholder="Your Message" />
             <button>Send Email</button>
           </div>
         </div>
