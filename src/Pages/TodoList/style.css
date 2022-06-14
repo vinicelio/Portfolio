@@ -1,0 +1,108 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: purple;
+  text-align: center;
+  color: white;
+}
+.backgroundCol2 {
+  flex: 1;
+}
+
+.footer {
+  background: purple;
+  text-align: center;
+  color: white;
+}
+
+.body {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.inputContainer {
+  display: flex;
+  height: 45px;
+  gap: 10px;
+}
+
+.inputTask {
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  background: #f3f3f3;
+}
+.buttonAdd {
+  border: none;
+  border-radius: 5px;
+  background: purple;
+  color: white;
+  transition: 300ms;
+  cursor: pointer;
+}
+.buttonAdd:hover {
+  background: rgb(94, 1, 94);
+}
+
+.tasklist {
+  padding-left: 0px !important;
+  margin-bottom: 40px;
+}
+.itemText {
+  flex: 1;
+}
+
+.itemButton {
+  width: 35px;
+  height: 35px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.itemCheckButton {
+  background: rgb(113, 196, 30);
+}
+
+.itemDeleteButton {
+  background: rgb(196, 30, 30);
+}
+
+.listItens {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 15px;
+  border-bottom: 1px solid #dadada;
+  gap: 10px;
+}
+
+.resetButton {
+  height: 45px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background: purple;
+  color: white;
+  transition: 300ms;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.resetButton:hover {
+  background: rgb(94, 1, 94);
+}
+
+.withoutTasks {
+  height: 150px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

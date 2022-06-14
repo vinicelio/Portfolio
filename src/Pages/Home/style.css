@@ -1,0 +1,80 @@
+.cabeça {
+  background-color: rgb(26, 26, 135);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.experience {
+  margin-top: 0px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+}
+.frontEndSkills {
+  background-color: rgb(105, 152, 246);
+  flex: 1;
+  border-radius: 150px;
+  border: 0.5px solid black;
+}
+.skills {
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.otherSkills {
+  background-color: rgb(105, 152, 246);
+  flex: 1;
+  border-radius: 150px;
+  border: 0.5px solid black;
+}
+.titleExperience {
+  text-align: center;
+  font-size: 30px;
+}
+.array {
+  background-color: rgb(26, 26, 135);
+  min-height: 100vh;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.allProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+.titleProject {
+  margin-top: 0;
+}
+.project {
+  text-decoration: none;
+}
+.projectBackground {
+  background-color: rgb(105, 152, 246);
+  color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+.projectBackground:hover {
+  background-color: black;
+  transition: 1seg;
+}
+@media only screen and (max-width: 550px) {
+  .cabeça {
+    font-size: 20px;
+  }
+  .frontEndSkills {
+    border-radius: 50px;
+  }
+  .otherSkills {
+    border-radius: 50px;
+  }
+}
