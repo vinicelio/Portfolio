@@ -51,9 +51,11 @@
   gap: 100px;
 }
 .titleProject {
+  padding-top: 30px;
   margin-top: 0;
 }
 .project {
+  padding-top: 100px;
   text-decoration: none;
 }
 .projectBackground {
@@ -62,11 +64,45 @@
   height: 200px;
   width: 200px;
   border-radius: 20px;
+  padding: 20px;
 }
 .projectBackground:hover {
   background-color: black;
   transition: 1seg;
 }
+.titleContact {
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 30px;
+}
+.contact {
+  background-color: rgb(130, 238, 130);
+  min-height: 100vh;
+  justify-content: center;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  justify-content: center;
+  color: black;
+  font-size: 50px;
+  display: grid;
+  padding: 50px;
+}
+.email {
+  display: grid;
+  justify-content: center;
+}
+.imput {
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 550px) {
   .cabeça {
     font-size: 20px;

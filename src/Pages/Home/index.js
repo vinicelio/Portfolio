@@ -1,17 +1,21 @@
 import "../Home/style.css";
 import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function Home() {
   const projects = [
     {
       path: "/TodoList",
       title: "To Do List",
-      description: "Lista de taefas feita utilizando react e use state hook",
+      description: "Lista de tarefas feita utilizando react e use state hook",
     },
     {
       path: "/SkyBartender",
       title: "Sky Bartender",
-      description: "Lista de taefas feita utilizando react e array",
+      description:
+        "Site para empresa de Bartenders utilizando react e router doon",
     },
   ];
   return (
@@ -60,11 +64,39 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <h1>oi</h1>
+      <div className="contact">
+        <div>
+          <h1 className="titleContact">Contact Me</h1>
+        </div>
+        <div className="links">
+          <div className="link">
+            <a
+              className="link"
+              href="https://api.whatsapp.com/send?phone=5519992559375"
+              draggable="false"
+            >
+              <BsWhatsapp />
+            </a>
+            <a
+              className="link"
+              href="https://www.instagram.com/vini_celio/"
+              draggable="false"
+            >
+              <BsInstagram />
+            </a>
+            <a className="link" draggable="false">
+              <AiOutlineMail />
+            </a>
+          </div>
+          <div className="email">
+            <input className="imput" type="text" placeholder="Your Full Name" />
+            <input className="imput" type="text" placeholder="Your Email" />
+            <input className="imput" type="text" placeholder="Your Message" />
+            <button>Send Email</button>
+          </div>
+        </div>
       </div>
+      <div className="footer">oi</div>
     </div>
   );
 }
-// https://api.whatsapp.com/send?phone=5519992559375
-// https://www.instagram.com/vini_celio/
