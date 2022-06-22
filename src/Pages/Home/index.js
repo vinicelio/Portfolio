@@ -17,6 +17,30 @@ export default function Home() {
       description:
         "Site para empresa de Bartenders utilizando react e router doon",
     },
+    {
+      path: "/SkyBartender",
+      title: "Sky Bartender",
+      description:
+        "Site para empresa de Bartenders utilizando react e router doon",
+    },
+    {
+      path: "/SkyBartender",
+      title: "Sky Bartender",
+      description:
+        "Site para empresa de Bartenders utilizando react e router doon",
+    },
+    {
+      path: "/SkyBartender",
+      title: "Sky Bartender",
+      description:
+        "Site para empresa de Bartenders utilizando react e router doon",
+    },
+    {
+      path: "/SkyBartender",
+      title: "Sky Bartender",
+      description:
+        "Site para empresa de Bartenders utilizando react e router doon",
+    },
   ];
   return (
     <div className="casa">
@@ -84,19 +108,43 @@ export default function Home() {
             >
               <BsInstagram />
             </a>
-            <a className="link" draggable="false">
+
+            <a
+              href="mailto:vinihcalmeida@gmail.com"
+              className="link"
+              draggable="false"
+            >
               <AiOutlineMail />
             </a>
           </div>
           <div className="email">
-            <input className="input" type="text" placeholder="Your Full Name" />
-            <input className="input" type="text" placeholder="Your Email" />
-            <input className="input" type="text" placeholder="Your Message" />
-            <button>Send Email</button>
+            <div>
+              <input
+                name="name"
+                className="input"
+                type="text"
+                placeholder="Your Full Name"
+                requiered
+              />
+              <input
+                name="email"
+                className="input"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                name="message"
+                className="messageInput"
+                type="text"
+                placeholder="Your Message"
+                required
+              />
+            </div>
+            <button className="sendEmailButton">Send Email</button>
           </div>
         </div>
       </div>
-      <div className="footer">oi</div>
     </div>
   );
 }

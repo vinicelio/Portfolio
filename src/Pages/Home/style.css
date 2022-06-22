@@ -9,16 +9,21 @@
   font-size: 30px;
 }
 .experience {
-  margin-top: 0px;
+  margin: 0px auto;
   color: white;
-  min-height: 100vh;
+  min-height: 90vh;
+  width: 90%;
+  max-width: 1000px;
+  gap: 50px;
   display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 .frontEndSkills {
   background-color: rgb(105, 152, 246);
-  flex: 1;
-  border-radius: 150px;
+  border-radius: 20px;
   border: 0.5px solid black;
+  flex: 1;
 }
 .skills {
   align-items: center;
@@ -29,8 +34,8 @@
 }
 .otherSkills {
   background-color: rgb(105, 152, 246);
+  border-radius: 20px;
   flex: 1;
-  border-radius: 150px;
   border: 0.5px solid black;
 }
 .titleExperience {
@@ -43,12 +48,15 @@
   color: white;
   justify-content: center;
   text-align: center;
+  padding-bottom: 30px;
 }
 .allProjects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
 }
 .titleProject {
   padding-top: 30px;
@@ -57,6 +65,7 @@
 .project {
   padding-top: 100px;
   text-decoration: none;
+  line-height: 20px;
 }
 .projectBackground {
   background-color: rgb(105, 152, 246);
@@ -64,7 +73,8 @@
   height: 200px;
   width: 200px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px;
+  line-height: 20px;
 }
 .projectBackground:hover {
   background-color: black;
@@ -84,28 +94,53 @@
   display: flex;
   justify-content: center;
   max-width: 1000px;
+  width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 .link {
   justify-content: center;
   color: black;
   font-size: 50px;
-  display: grid;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .email {
   flex: 1;
   justify-content: center;
-  align-items: center;
+  margin-top: 70px;
+  min-width: 300px;
 }
 .input {
-  margin-bottom: 20px;
   display: block;
-  align-items: center;
+  margin-bottom: 10px;
   text-align: center;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 5px;
+  height: 45px;
+  width: 100%;
+}
+.messageInput {
+  display: block;
+  width: 100%;
+  height: 150px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.sendEmailButton {
+  border-radius: 5px;
+  border: 1px solid black;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 550px) {
@@ -117,5 +152,8 @@
   }
   .otherSkills {
     border-radius: 50px;
+  }
+  .email {
+    max-width: 200px;
   }
 }
