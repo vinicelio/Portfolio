@@ -1,5 +1,5 @@
 .cabeça {
-  background-color: rgb(26, 26, 135);
+  background-color: #21295c;
   color: white;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
 }
 .experience {
   margin: 0px auto;
+
   color: white;
   min-height: 90vh;
   width: 90%;
@@ -20,10 +21,10 @@
   padding: 50px 0;
 }
 .frontEndSkills {
-  background-color: rgb(105, 152, 246);
   border-radius: 20px;
   border: 0.5px solid black;
   flex: 1;
+  background-color: #065a82;
 }
 .skills {
   align-items: center;
@@ -37,18 +38,19 @@
   border-radius: 20px;
   flex: 1;
   border: 0.5px solid black;
+  background-color: #065a82;
 }
 .titleExperience {
   text-align: center;
   font-size: 30px;
 }
 .array {
-  background-color: rgb(26, 26, 135);
   min-height: 100vh;
   color: white;
   justify-content: center;
   text-align: center;
   padding-bottom: 30px;
+  background-color: #21295c;
 }
 .allProjects {
   display: flex;
@@ -72,7 +74,7 @@
   text-decoration: none;
 }
 .projectBackground {
-  background-color: rgb(105, 152, 246);
+  background-color: #065a82;
   color: white;
   height: 200px;
   width: 200px;
@@ -84,8 +86,9 @@
   gap: 20px;
 }
 .projectBackground:hover {
-  background-color: black;
+  background-color: #21295c;
   transition: 1seg;
+  border: 1px solid black;
 }
 .titleContact {
   margin-top: 0px;
@@ -93,7 +96,7 @@
   padding-top: 30px;
 }
 .contact {
-  background-color: rgb(130, 238, 130);
+  background-color: white;
   min-height: 100vh;
   justify-content: center;
 }
@@ -131,6 +134,7 @@
   width: 100%;
   padding: 10px;
   font-size: 16px;
+  background-color: #f3f3f3;
 }
 .messageInput {
   padding: 10px;
@@ -144,6 +148,7 @@
   border-radius: 5px;
   text-align: start;
   resize: none;
+  background-color: #f3f3f3;
 }
 .sendEmailButton {
   border-radius: 5px;
@@ -153,6 +158,7 @@
   width: 200px;
   cursor: pointer;
   font-size: 16px;
+  background-color: #f3f3f3;
 }
 
 @media only screen and (max-width: 550px) {
@@ -167,5 +173,11 @@
   }
   .email {
     max-width: 200px;
+  }
+  .sendEmailButton {
+    margin-bottom: 20px;
+  }
+  .link {
+    margin-top: 40px;
   }
 }

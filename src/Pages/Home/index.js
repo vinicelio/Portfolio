@@ -13,15 +13,19 @@ export default function Home() {
     {
       path: "/TodoList",
       title: "To Do List",
-      description: "Lista de tarefas feita utilizando react e use state hook",
+      description: "To-do list made using react and use state hook",
     },
     {
       path: "/SkyBartender",
       title: "Sky Bartender",
-      description:
-        "Site para empresa de Bartenders utilizando react e router doon",
+      description: "Website for bartending company using react and router dom",
     },
   ];
+
+  // Arrumar as cores do home :D
+  // Calculadora (logica e design)
+  // Password generator (logica, design e mais logica)
+  // Grafico das mortes do covid (fetch de dados + graficos com react)
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -82,7 +86,7 @@ export default function Home() {
           <div className="allProjects">
             {projects.map((project) => {
               return (
-                <a className="project" href={project.path}>
+                <a className="project" href={project.path} target="blank">
                   <div className="projectBackground">
                     <div className="projectTitle">{project.title}</div>
                     <div>{project.description}</div>
