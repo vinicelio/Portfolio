@@ -6,11 +6,15 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+}
+.cabeça p {
   font-size: 30px;
+}
+.cabeça h1 {
+  font-size: 80px;
 }
 .experience {
   margin: 0px auto;
-
   color: white;
   min-height: 90vh;
   width: 90%;
@@ -29,9 +33,9 @@
 .skills {
   align-items: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 30px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .otherSkills {
   background-color: rgb(105, 152, 246);
@@ -42,7 +46,7 @@
 }
 .titleExperience {
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
 }
 .array {
   min-height: 100vh;
@@ -63,15 +67,15 @@
 .titleProject {
   padding-top: 30px;
   margin-top: 0;
+  font-size: 60px;
 }
 .projectTitle {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 30px;
 }
-
 .project {
   padding-top: 100px;
   text-decoration: none;
+  font-size: 15px;
 }
 .projectBackground {
   background-color: #065a82;
@@ -94,6 +98,7 @@
   margin-top: 0px;
   text-align: center;
   padding-top: 30px;
+  font-size: 60px;
 }
 .contact {
   background-color: white;
@@ -160,16 +165,72 @@
   font-size: 16px;
   background-color: #f3f3f3;
 }
-
-@media only screen and (max-width: 550px) {
-  .cabeça {
+@media only screen and (max-width: 640px) {
+  .cabeça h1 {
+    font-size: 60px;
+  }
+  .cabeça p {
+    font-size: 20px;
+  }
+  .experience {
+    gap: 20px;
+    padding: 10px 0;
+    min-height: 70vh;
+  }
+  .titleExperience {
+    font-size: 40px;
+  }
+  .skills {
     font-size: 20px;
   }
   .frontEndSkills {
-    border-radius: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .titleProject {
+    font-size: 40px;
+  }
+  .projectTitle {
+    font-size: 20px;
+  }
+  .titleContact {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .allProjects {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .projectBackground {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cabeça h1 {
+    font-size: 40px;
+  }
+  .cabeça p {
+    font-size: 20px;
+  }
+  .experience {
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .titleExperience {
+    font-size: 30px;
+  }
+  .frontEndSkills {
+    border-radius: 20px;
+    font-size: 15px;
   }
   .otherSkills {
-    border-radius: 50px;
+    border-radius: 15px;
+  }
+  .titleProject {
+    font-size: 30px;
   }
   .email {
     max-width: 200px;
@@ -179,5 +240,9 @@
   }
   .link {
     margin-top: 40px;
+    gap: 10px;
+  }
+  .titleContact {
+    font-size: 30px;
   }
 }
