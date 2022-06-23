@@ -1,10 +1,14 @@
 import "../Home/style.css";
-import React from "react";
+import React, { useRef } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export default function Home() {
+  const form = useRef();
+
   const projects = [
     {
       path: "/TodoList",
@@ -17,31 +21,32 @@ export default function Home() {
       description:
         "Site para empresa de Bartenders utilizando react e router doon",
     },
-    {
-      path: "/SkyBartender",
-      title: "Sky Bartender",
-      description:
-        "Site para empresa de Bartenders utilizando react e router doon",
-    },
-    {
-      path: "/SkyBartender",
-      title: "Sky Bartender",
-      description:
-        "Site para empresa de Bartenders utilizando react e router doon",
-    },
-    {
-      path: "/SkyBartender",
-      title: "Sky Bartender",
-      description:
-        "Site para empresa de Bartenders utilizando react e router doon",
-    },
-    {
-      path: "/SkyBartender",
-      title: "Sky Bartender",
-      description:
-        "Site para empresa de Bartenders utilizando react e router doon",
-    },
   ];
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    toast.loading("Sending email...");
+
+    emailjs
+      .sendForm(
+        "service_zrqdj07",
+        "template_d8fvcie",
+        form.current,
+        "PY4j2p76F0SaJt--5"
+      )
+      .then(
+        (result) => {
+          toast.dismiss();
+          toast.success("Email sent successfully :)");
+          document.getElementById("emailForm").reset();
+        },
+        (error) => {
+          toast.dismiss();
+          toast.error("Ops, something went wrong :(");
+        }
+      );
+  };
+
   return (
     <div className="casa">
       <div className="cabeça">
@@ -79,8 +84,8 @@ export default function Home() {
               return (
                 <a className="project" href={project.path}>
                   <div className="projectBackground">
-                    <div>{project.title}</div>
-                    <div className>{project.description}</div>
+                    <div className="projectTitle">{project.title}</div>
+                    <div>{project.description}</div>
                   </div>
                 </a>
               );
@@ -118,7 +123,7 @@ export default function Home() {
             </a>
           </div>
           <div className="email">
-            <div>
+            <form ref={form} id="emailForm" onSubmit={sendEmail}>
               <input
                 name="name"
                 className="input"
@@ -133,15 +138,17 @@ export default function Home() {
                 placeholder="Your Email"
                 required
               />
-              <input
+              <textarea
                 name="message"
                 className="messageInput"
                 type="text"
                 placeholder="Your Message"
                 required
               />
-            </div>
-            <button className="sendEmailButton">Send Email</button>
+              <button type="submit" className="sendEmailButton">
+                Send Email
+              </button>
+            </form>
           </div>
         </div>
       </div>
