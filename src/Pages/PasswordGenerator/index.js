@@ -1,6 +1,6 @@
 import style from "./style.module.css";
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { BiCopyAlt } from "react-icons/bi";
 import { useState } from "react";
 import {
