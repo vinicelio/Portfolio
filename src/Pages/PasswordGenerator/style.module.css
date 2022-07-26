@@ -3,7 +3,8 @@
   background-color: rgb(1, 121, 121);
 }
 .container {
-  width: 450px;
+  width: 90%;
+  max-width: 350px;
   margin: 0 auto;
   padding-top: 150px;
 }
@@ -25,6 +26,7 @@
   color: white;
   height: 40px;
   margin-bottom: 20px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
 }
@@ -32,6 +34,7 @@
   position: absolute;
   background-color: rgb(1, 65, 65);
   color: white;
+  border-radius: 5px;
   border: 2px solid black;
   height: 50px;
   padding: 15px;
@@ -44,6 +47,7 @@
   display: block;
   width: 100%;
   padding: 10px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
   font-size: 17px;
@@ -53,4 +57,9 @@
   justify-content: space-between;
   color: white;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 300px) {
+  * {
+    font-size: 12px;
+  }
 }

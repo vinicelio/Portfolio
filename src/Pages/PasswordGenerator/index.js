@@ -81,6 +81,7 @@ export default function PasswordGenerator() {
               defaultValue={passwordLenght}
               onChange={(e) => setpasswordLenght(e.target.value)}
               type="number"
+              style={{ borderRadius: "5px" }}
               id="passwordLenght"
               name="passwordLenght"
               max="20"
