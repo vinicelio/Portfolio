@@ -55,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="root">
+    <div>
       <div className="header">
         <p>Hello, I'm</p>
         <h1>Vinicius Almeida</h1>
