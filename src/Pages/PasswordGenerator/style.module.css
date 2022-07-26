@@ -1,0 +1,56 @@
+.root {
+  min-height: 100vh;
+  background-color: rgb(1, 121, 121);
+}
+.container {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.generator {
+  background-color: rgb(1, 65, 65);
+  border-radius: 5px;
+  box-shadow: 15px 15px 10px;
+  padding: 20px;
+}
+.generatorHeader {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.generatorPassword {
+  position: relative;
+  background-color: rgb(1, 47, 47);
+  padding: 5px 10px;
+  color: white;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.copyButton {
+  position: absolute;
+  background-color: rgb(1, 65, 65);
+  color: white;
+  border: 2px solid black;
+  height: 50px;
+  padding: 15px;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+}
+.generatorButton {
+  background-color: rgb(1, 121, 121);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 15px;
+}

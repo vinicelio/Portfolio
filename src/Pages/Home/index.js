@@ -20,11 +20,14 @@ export default function Home() {
       title: "Sky Bartender",
       description: "Website for bartending company using react and router dom",
     },
+    {
+      path: "/PasswordGenerator",
+      title: "Password Generator",
+      description: "An App that create random password using React",
+    },
   ];
 
-  // Arrumar as cores do home :D
   // Calculadora (logica e design)
-  // Password generator (logica, design e mais logica)
   // Grafico das mortes do covid (fetch de dados + graficos com react)
 
   const sendEmail = (e) => {
@@ -52,8 +55,8 @@ export default function Home() {
   };
 
   return (
-    <div className="casa">
-      <div className="cabeça">
+    <div className="root">
+      <div className="header">
         <p>Hello, I'm</p>
         <h1>Vinicius Almeida</h1>
         <p>FrontEnd Developer</p>
@@ -86,7 +89,7 @@ export default function Home() {
           <div className="allProjects">
             {projects.map((project) => {
               return (
-                <a className="project" href={project.path} target="blank">
+                <a className="project" href={project.path}>
                   <div className="projectBackground">
                     <div className="projectTitle">{project.title}</div>
                     <div>{project.description}</div>

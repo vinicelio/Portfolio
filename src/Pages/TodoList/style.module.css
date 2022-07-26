@@ -55,24 +55,6 @@
 .itemText {
   flex: 1;
 }
-
-.itemButton {
-  width: 35px;
-  height: 35px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.itemCheckButton {
-  background: rgb(113, 196, 30);
-}
-
-.itemDeleteButton {
-  background: rgb(196, 30, 30);
-}
-
 .listItens {
   list-style-type: none;
   display: flex;
@@ -81,7 +63,6 @@
   border-bottom: 1px solid #dadada;
   gap: 10px;
 }
-
 .resetButton {
   height: 45px;
   width: 200px;
@@ -98,7 +79,6 @@
 .resetButton:hover {
   background: rgb(94, 1, 94);
 }
-
 .withoutTasks {
   height: 150px;
   color: #999;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import style from "./style.module.css";
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
@@ -34,62 +34,54 @@ export default function TodoList() {
   }
 
   return (
-    <div className="root">
-      <div className="header">
+    <div className={style.root}>
+      <div className={style.header}>
         <h1>Task List</h1>
       </div>
-      <div className="backgroundCol2">
-        <div className="body">
-          <div className="inputContainer">
+      <div className={style.backgroundCol2}>
+        <div className={style.body}>
+          <div className={style.inputContainer}>
             <input
-              className="inputTask"
+              className={style.inputTask}
               type="text"
               placeholder="Enter a Task"
               value={task}
               onChange={(e) => setTask(e.target.value)}
             />
-            <button className="buttonAdd" onClick={addTask}>
+            <button className={style.buttonAdd} onClick={addTask}>
               Add Task
             </button>
           </div>
           {list.length === 0 && (
-            <div className="withoutTasks">
+            <div className={style.withoutTasks}>
               <div>You Don't Have Any Tasks :)</div>
             </div>
           )}
 
-          <ul className="tasklist">
+          <ul className={style.tasklist}>
             {list.map((listIten, index) => {
               return (
                 <li
-                  className="listItens"
+                  className={style.listItens}
                   style={{
                     background: listIten.check ? "rgb(199, 253, 199)" : "",
                   }}
                 >
-                  <div className="itemText">{listIten.name}</div>{" "}
-                  <button
-                    className="itemButton itemCheckButton"
-                    onClick={() => checkTask(index)}
-                  >
-                    ✓
-                  </button>
-                  <button
-                    className="itemDeleteButton itemButton"
-                    onClick={() => deleteTask(index)}
-                  >
+                  <div className={style.itemText}>{listIten.name}</div>{" "}
+                  <button onClick={() => checkTask(index)}>✓</button>
+                  <button onClick={() => deleteTask(index)}>
                     <FaTrashAlt />
                   </button>
                 </li>
               );
             })}
           </ul>
-          <button className="resetButton" onClick={resetTask}>
+          <button className={style.resetButton} onClick={resetTask}>
             Reset Task List
           </button>
         </div>
       </div>
-      <div className="footer">
+      <div className={style.footer}>
         <strong>
           <p>Vinicius Almeida-&copy;</p>
         </strong>
